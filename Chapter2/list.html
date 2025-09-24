@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Use of Lists
+        </title>
+    </head>
+    <body>
+        <!-- Two of list 1.Ordered list (default 1,2,3 )2.Unordered list(disc (default),square ,circle , none ) -->
+         <!-- Ordered list (1,2,3) default,(a,b,c) type='a',(A,B,C) type='A' ,(i,ii,ii) type='i',(I,II) type='I' -->
+          <ul>
+            <li> List 1 </li>
+            <li> List 2 </li>
+            <li> List 3 </li>
+          </ul>
+        <ul type="square"> 
+            <li>List 4 </li>
+                <ul type="circle">
+                    <li>List 4.1</li>
+                    <li>List 4.2</li>
+                </ul>
+            <li>List 5 </li>
+                <ul type="none">
+                    <li>List 5.1</li>
+                    <ul type="circle">
+                    <li>List 5.1.1</li></ul>
+                </ul>
+            <li>List 6 </li>
+        </ul>
+        <ol>
+            <li>ABC            </li>
+            <li>XYZ</li>
+        </ol>
+        <ol type="A" start="27"> 
+            <li> 123</li>
+            <li> 456</li>
+            <li> 789 </li>
+        </ol>
+        <ol type="a" reversed > 
+            <li> 123</li>
+            <li> 456</li>
+            <li> 789 </li>
+        </ol>
+        <ol type="I" reversed start="5"> 
+            <li> 123</li>
+            <li> 456</li>
+            <li> 789 </li>
+        </ol>
+        <ol type="I" reversed>
+            <li> List1</li>
+            <li> List2</li>
+                <ol type="a">
+                    <li> List 2.1</li>
+                    <li> List 2.2</li>
+                </ol>
+            <li> List3</li>
+                <ol type="A" reversed start="5">
+                <li>List 3.1</li>
+                <li>List 3.2</li>
+                </ol>
+        </ol>
+    </body>
+</html>
