@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+              Introduction of Chapter 3
+            </title>
+        </head>
+        <body>
+            <form action="#" method="get">
+            <fieldset align="center">
+                <legend>
+                   <b> Information</b>
+                </legend>
+                <label for="uname">Username:</label>
+                <!-- default type is text -->
+                 
+                <input type="text" id="uname" name="uname" autofocus autocomplete="on" placeholder="User Name" maxlength="20" required/>
+                <br>
+                <label>Email:  </label>
+                <input type="email" placeholder="abc@gmail.com" required name="eid">
+                <br>
+                <label>Password:</label>
+                <input type="password" placeholder="Abc12@3" required name="password">
+                <br>
+                <label >Phone:</label>
+                <input type="tel" name="phone" placeholder="9997779990" required/>
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" checked/>Male
+                <input type="radio" name="gender" value="female"/>Female
+                <br>
+                <label>Hobby</label>
+                <input type="checkbox" name="hobby" value="music" checked/> Music
+                <input type="checkbox" name="hobby" value="drawing" /> Drawing
+                <input type="checkbox" name="hobby" value="dance" /> Dance
+                <br>
+                <textarea name="msg" rows="10" cols="20" placeholder="Type your message">Hi! How are you</textarea>
+            </fieldset> 
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label>DOB</label>
+                <input type="date" name="dob" min="2025-09-01" max="2025-09-31"/>
+                <br>
+                <label>Age</label>
+                <input type="number" name="age" min="18" max="35" value="20" step="1">
+                <br>
+                <label>Price</label>
+                <input type="range" name="price" min="100" max="1000" step="50" value="200"/>
+                <br>
+                <label>Color</label>
+                <input type="color" name="clr" value="#000000">
+                <br>
+                <label>City</label>
+                <select name="city">
+                    <option value=" ">Select</option>
+                    <option value="ahm">Ahemdabad</option>
+                    <option value="surat">Surat</option>
+                    <option value="vapi">Vapi</option>
+                </select>
+                <br>
+                <label>Branch</label>
+                <select name="branch">
+                    <option value="select" selected disabled>Select</option>
+                    <optgroup label="Computer">
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="mechnical">Mechanical</option>
+                        <option value="Civil">Civil</option>
+                    </optgroup>
+                </select>
+                <br>
+                <input list="browser" name="browser">
+                <datalist id="browser">
+                    <option value="Chrome">
+                    <option value="edge">
+                    <option value="safari">
+                </datalist>
+                <br>
+                <input type="reset" value="Reset Form"/>
+                <input type="button" value="submit button"/>
+                <Button type="submit">Submit here</Button>
+                <button>Button</button>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="submit"/>
+            </fieldset>
+            </form>
+        </body>
+    </html>
